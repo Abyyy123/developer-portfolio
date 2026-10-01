@@ -1,0 +1,9 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{background:#FFFAEE;color:#2B2620;overflow-x:hidden}
+:focus-visible{outline:2px solid #3B5BDB;outline-offset:3px}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.section{@apply mx-auto max-w-6xl px-5 py-16 sm:px-8 md:py-24}
+.h-hand{@apply font-hand text-3xl leading-tight min-[380px]:text-4xl sm:text-5xl}
+.mark{background:linear-gradient(transparent 58%,#FFD54A 58%,#FFD54A 92%,transparent 92%);padding:0 .15em}
+.card{@apply rounded-3xl border-2 border-line bg-white/80 shadow-[0_6px_0_rgba(235,217,143,.5)]}
