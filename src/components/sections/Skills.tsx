@@ -3,9 +3,10 @@ import { skills } from "@/data/skills";
 import type { Skill } from "@/types/portfolio";
 import { Mascot } from "@/components/mascot/Mascot";
 import { PaperNote, Pill } from "@/components/ui/Paper";
+// Rendered in the site's ink color (not each brand's own color) to match the restrained doodle palette.
 function Logo({ s }: { s: Skill }) {
-  if (s.icon) return <svg viewBox="0 0 24 24" role="img" aria-label={`${s.name} logo`} className="h-7 w-7" fill={`#${s.icon.hex}`}><path d={s.icon.path} /></svg>;
-  return s.fallback==="java" ? <Coffee aria-label="Java logo" size={26} color="#ED8B00" /> : <Webhook aria-label="REST API icon" size={26} />;
+  if (s.icon) return <svg viewBox="0 0 24 24" role="img" aria-label={`${s.name} logo`} className="h-7 w-7 text-ink" fill="currentColor"><path d={s.icon.path} /></svg>;
+  return s.fallback==="java" ? <Coffee aria-label="Java logo" size={26} className="text-ink" /> : <Webhook aria-label="REST API icon" size={26} className="text-ink" />;
 }
 export function Skills() {
   return (
