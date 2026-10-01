@@ -2,7 +2,7 @@ import { Check, Heart } from "lucide-react";
 import { Mascot } from "@/components/mascot/Mascot";
 import { Bubble, PaperNote, Pill } from "@/components/ui/Paper";
 import { DoodleUnderline } from "@/components/doodle/DoodleUnderline";
-const points = ["Full-stack development","JavaScript & TypeScript","PHP, Laravel & CodeIgniter","MySQL & PostgreSQL","Late-night coder ♡"];
+const points = ["Full-stack development","JavaScript & TypeScript","PHP, Laravel & CodeIgniter","React & Next.js", "MySQL & REST API", "Postman", "Late-night coder ♡"];
 export function About() {
   return (
     <section id="about" className="section">
